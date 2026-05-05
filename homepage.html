@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypingBetter | Master Your Workflow</title>
+    <style>
+        :root {
+            --primary: #007AFF;
+            --bg: #0a0a0a;
+            --text: #ffffff;
+            --gray: #888;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* --- LOGO & HEADER --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            border-bottom: 1px solid #222;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        /* PASTE YOUR LOGO HERE: Replace the .logo-img src below */
+        .logo-img {
+            max-height: 50px;
+            width: auto;
+            display: block;
+        }
+
+        /* Placeholder style if no image is found */
+        .logo-placeholder {
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: -1px;
+            color: var(--primary);
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            background: linear-gradient(to right, #fff, #888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: var(--gray);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 20px 0 40px;
+        }
+
+        .cta-button {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* --- FEATURES --- */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 100px 10%;
+        }
+
+        .feature-card {
+            background: #111;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #222;
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            color: #444;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="your-logo-file.png" alt="TypingBetter" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="logo-placeholder" style="display:none;">TypingBetter_</div>
+        </div>
+        <nav>
+            <a href="#">Lessons</a>
+            <a href="#">Practice</a>
+            <a href="#">Pricing</a>
+            <a href="#" class="cta-button" style="padding: 10px 20px;">Join</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Type Faster. Think Better.</h1>
+        <p>Unlock your peak productivity with advanced muscle memory training and real-time analytics. Stop hunting, start flowing.</p>
+        <a href="#" class="cta-button">Start Typing Free</a>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Precision Engine</h3>
+            <p>Our algorithms track every keystroke to identify exactly where your speed drops.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Adaptive Lessons</h3>
+            <p>Don't waste time on easy keys. The curriculum evolves as you get faster.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Global Leaderboards</h3>
+            <p>Compete with typists around the world and climb the ranks of efficiency.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 TypingBetter Inc. All rights reserved.
+    </footer>
+
+</body>
+</html>
